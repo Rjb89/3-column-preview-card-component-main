@@ -1,0 +1,87 @@
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  /* (paragraphs) */
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  /* (background, headings, buttons) */
+  --Very-light-gray: hsl(0, 0%, 95%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+.body {
+  background-color: var(--Very-light-gray);
+  max-width: 1440px;
+}
+.warpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.2rem;
+}
+.sedans-card {
+  background-color: var(--Bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+.suvs-card {
+  background-color: var(--Dark-cyan);
+}
+.luxury-card {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+.img {
+  width: 30%;
+  margin-bottom: 1rem;
+}
+.heading-tittle {
+  color: var(--Very-light-gray);
+  font-family: "Big Shoulders Display", cursive, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.info_paragraphe {
+  color: var(--Transparent-white);
+  margin-bottom: 4rem;
+}
+.btn {
+  background-color: var(--Very-light-gray);
+  border-radius: 50px;
+  text-transform: capitalize;
+  padding: 0.7rem;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 70%;
+}
+.sd-btn {
+  color: var(--Bright-orange);
+}
+.suv-btn {
+  color: var(--Dark-cyan);
+}
+.lx-btn {
+  color: var(--Very-dark-cyan);
+}
